@@ -48,7 +48,9 @@ class UserController extends Controller
      */
     public function campaigns(): JsonResponse
     {
-        $user = User::find(Auth::user()->id);
+        $user = User::find(Auth::user()->id);        
+
+        
         return $this->campaignStructure();
     }
 
@@ -59,8 +61,18 @@ class UserController extends Controller
      */
     protected function campaignStructure(): JsonResponse
     {
-        return response()->json([
-            'user' => User::with('campaigns')->find(Auth::id()),
-        ]);
+        $isadmin = Auth::user()->role;
+        if($isadmin == 1){
+            return response()->json([
+                'user' => User::with('campaigns')->find(Auth::id())
+                ,
+            ]);      
+
+        }
+        else{
+            return response()->json([
+                'user' => User::with('campaigns')->find(Auth::id()),
+            ]);        }
+
     }
 }

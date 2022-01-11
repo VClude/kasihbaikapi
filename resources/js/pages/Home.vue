@@ -93,6 +93,12 @@
                         <router-link class="mt-5 text-center button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full"
                                      :to="{ name: 'SingleCampaign', params: { slug: item.slug } }"
                         >Menjadi Sukarelawan</router-link>
+                        <p v-if="item.status == 0" class="text-red-700 text-base overflow-ellipsis overflow-hidden">
+                                Belum Disetujui
+                            </p>
+                            <p v-else class="text-green-700 text-base overflow-ellipsis overflow-hidden">
+                                Disetujui
+                            </p>
                     </div>
                 </div>
             </div>

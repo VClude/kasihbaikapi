@@ -66,6 +66,8 @@
             </div>
             </div>
             </div>
+
+ 
             <div v-else>
                 <div class="h-screen mt-8">
                     <h4 class="text-2xl text-white">
@@ -92,7 +94,7 @@ export default {
         const { campaigns, getCampaigns } = useUser()
 
         onMounted(getCampaigns)
-
+        console.log(campaigns)
         return {
             campaigns,
             getCampaigns

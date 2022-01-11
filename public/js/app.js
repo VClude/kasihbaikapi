@@ -19726,6 +19726,7 @@ __webpack_require__.r(__webpack_exports__);
         getCampaigns = _useUser.getCampaigns;
 
     (0,vue__WEBPACK_IMPORTED_MODULE_2__.onMounted)(getCampaigns);
+    console.log(campaigns);
     return {
       campaigns: campaigns,
       getCampaigns: getCampaigns
@@ -20952,19 +20953,28 @@ var _hoisted_15 = {
 
 var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Menjadi Sukarelawan");
 
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"container mx-auto pt-24\"><div class=\"flex justify-between items-center\"><div class=\"w-auto\"><h2 class=\"text-3xl text-gray-900 mb-8\"> See What Our <br> Happy Clients Say </h2></div></div><div class=\"flex mb-10\"><div class=\"w-2/12 flex justify-center items-start\"><img src=\"/images/testimonial-line.svg\" alt=\"\"></div><div class=\"w-8/12 mt-16\"><h2 class=\"text-3xl text-gray-900 font-light\"> “Funding at Bucker is very easy and comfortable. <br> Just need to find an idea, click and already funding.” </h2><div class=\"testimonial-info mt-8\"><div class=\"name text-xl font-semibold\">Shopie Nicole</div><div class=\"title text-xl font-light text-gray-400\"> Project Manager </div></div><div class=\"testimonial-icon mt-10\"><img src=\"/images/testimonial-1-icon.png\" alt=\"\" class=\"w-20 mr-5 inline-block testimonial-user rounded-full\"><img src=\"/images/testimonial-2-icon.png\" alt=\"\" class=\"w-20 mr-5 inline-block testimonial-user rounded-full\"><img src=\"/images/testimonial-3-icon.png\" alt=\"\" class=\"w-20 mr-5 inline-block testimonial-user active rounded-full\"></div></div><div class=\"w-2/12\"></div></div></section><div class=\"cta-clip -mt-20\"></div>", 2);
+var _hoisted_17 = {
+  key: 0,
+  "class": "text-red-700 text-base overflow-ellipsis overflow-hidden"
+};
+var _hoisted_18 = {
+  key: 1,
+  "class": "text-green-700 text-base overflow-ellipsis overflow-hidden"
+};
 
-var _hoisted_19 = {
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"container mx-auto pt-24\"><div class=\"flex justify-between items-center\"><div class=\"w-auto\"><h2 class=\"text-3xl text-gray-900 mb-8\"> See What Our <br> Happy Clients Say </h2></div></div><div class=\"flex mb-10\"><div class=\"w-2/12 flex justify-center items-start\"><img src=\"/images/testimonial-line.svg\" alt=\"\"></div><div class=\"w-8/12 mt-16\"><h2 class=\"text-3xl text-gray-900 font-light\"> “Funding at Bucker is very easy and comfortable. <br> Just need to find an idea, click and already funding.” </h2><div class=\"testimonial-info mt-8\"><div class=\"name text-xl font-semibold\">Shopie Nicole</div><div class=\"title text-xl font-light text-gray-400\"> Project Manager </div></div><div class=\"testimonial-icon mt-10\"><img src=\"/images/testimonial-1-icon.png\" alt=\"\" class=\"w-20 mr-5 inline-block testimonial-user rounded-full\"><img src=\"/images/testimonial-2-icon.png\" alt=\"\" class=\"w-20 mr-5 inline-block testimonial-user rounded-full\"><img src=\"/images/testimonial-3-icon.png\" alt=\"\" class=\"w-20 mr-5 inline-block testimonial-user active rounded-full\"></div></div><div class=\"w-2/12\"></div></div></section><div class=\"cta-clip -mt-20\"></div>", 2);
+
+var _hoisted_21 = {
   "class": "call-to-action bg-purple-progress pt-64 pb-10"
 };
-var _hoisted_20 = {
+var _hoisted_22 = {
   "class": "container mx-auto"
 };
-var _hoisted_21 = {
+var _hoisted_23 = {
   "class": "w-full text-center"
 };
 
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
   "class": "text-5xl text-white font-semibold"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Easy way to funding "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" best idea and innovation ")], -1
 /* HOISTED */
@@ -21024,10 +21034,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
     }, 1032
     /* PROPS, DYNAMIC_SLOTS */
-    , ["to"])])]);
+    , ["to"]), item.status == 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_17, " Belum Disetujui ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_18, " Disetujui "))])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])]), _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [_hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  ))])]), _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return _ctx.$router.push({
         path: '/upload'
