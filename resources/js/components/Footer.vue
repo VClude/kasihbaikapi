@@ -29,10 +29,10 @@
                 <div class="sm:w-1/4 h-auto">
                     <div class="mb-8 font-bold">Office</div>
                     <ul class="font-light">
-                        <li class="mb-3">+6285-5650-6571</li>
-                        <li class="mb-3">Candi, Sidoarjo</li>
-                        <li class="mb-3">Perum. Bumi Candi Asri</li>
-                        <li class="mb-3">support@backer.itats.ac.id</li>
+                        <li class="mb-3">+6280000</li>
+                        <li class="mb-3">Bogor</li>
+                        <li class="mb-3">PJl Pandu</li>
+                        <li class="mb-3">vclude@gmail.com</li>
                     </ul>
                 </div>
             </div>

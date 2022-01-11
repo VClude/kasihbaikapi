@@ -20186,7 +20186,7 @@ var _hoisted_1 = {
   "class": "bg-purple-progress py-20 text-white text-lg"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mx-auto\"><div class=\"sm:flex mb-4\"><div class=\"sm:w-1/2 sm:mt-0 mt-8 h-auto\"><img src=\"/images/logo-footer.svg\" alt=\"\" class=\"mb-3\"><p class=\"font-light\"> Helps people execute their <br>bright ideas </p></div><div class=\"sm:w-1/4 h-auto\"><div class=\"mb-8 font-bold\">Explore</div><ul class=\"font-light\"><li class=\"mb-3\">Our Services</li><li class=\"mb-3\">Equity System</li><li class=\"mb-3\">Refund</li><li class=\"mb-3\">Shareholder</li></ul></div><div class=\"sm:w-1/4 h-auto\"><div class=\"mb-8 font-bold\">Investor</div><ul class=\"font-light\"><li class=\"mb-3\">My Account</li><li class=\"mb-3\">Top Startups</li><li class=\"mb-3\">How-to Tutorials</li><li class=\"mb-3\">Withdrawl</li></ul></div><div class=\"sm:w-1/4 h-auto\"><div class=\"mb-8 font-bold\">Office</div><ul class=\"font-light\"><li class=\"mb-3\">+6285-5650-6571</li><li class=\"mb-3\">Candi, Sidoarjo</li><li class=\"mb-3\">Perum. Bumi Candi Asri</li><li class=\"mb-3\">support@backer.itats.ac.id</li></ul></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mx-auto\"><div class=\"sm:flex mb-4\"><div class=\"sm:w-1/2 sm:mt-0 mt-8 h-auto\"><img src=\"/images/logo-footer.svg\" alt=\"\" class=\"mb-3\"><p class=\"font-light\"> Helps people execute their <br>bright ideas </p></div><div class=\"sm:w-1/4 h-auto\"><div class=\"mb-8 font-bold\">Explore</div><ul class=\"font-light\"><li class=\"mb-3\">Our Services</li><li class=\"mb-3\">Equity System</li><li class=\"mb-3\">Refund</li><li class=\"mb-3\">Shareholder</li></ul></div><div class=\"sm:w-1/4 h-auto\"><div class=\"mb-8 font-bold\">Investor</div><ul class=\"font-light\"><li class=\"mb-3\">My Account</li><li class=\"mb-3\">Top Startups</li><li class=\"mb-3\">How-to Tutorials</li><li class=\"mb-3\">Withdrawl</li></ul></div><div class=\"sm:w-1/4 h-auto\"><div class=\"mb-8 font-bold\">Office</div><ul class=\"font-light\"><li class=\"mb-3\">+6280000</li><li class=\"mb-3\">Bogor</li><li class=\"mb-3\">PJl Pandu</li><li class=\"mb-3\">vclude@gmail.com</li></ul></div></div></div>", 1);
 
 var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -21595,11 +21595,14 @@ var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 var _hoisted_13 = {
   "class": "list-check mt-3"
 };
-var _hoisted_14 = {
-  key: 0,
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "/fund-success.html",
   "class": "text-center mt-3 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-medium px-6 py-3 text-md rounded-full"
-};
+}, " Menjadi Sukarelawan ", -1
+/* HOISTED */
+);
+
 var _hoisted_15 = {
   "class": "container mx-auto pt-8"
 };
@@ -21671,7 +21674,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     )]);
   }), 256
   /* UNKEYED_FRAGMENT */
-  )), !$setup.campaign.is_this_you ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", _hoisted_14, " Menjadi Sukarelawan ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.campaign.name), 1
+  )), _hoisted_14])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.campaign.name), 1
   /* TEXT */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.campaign.excerpt), 1
   /* TEXT */

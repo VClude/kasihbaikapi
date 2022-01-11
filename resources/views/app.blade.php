@@ -7,7 +7,7 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <title>Backer - Crowdfunding Edgy</title>
+        <title>Kasih Baik</title>
 
         <!-- Styles -->
         <style>
