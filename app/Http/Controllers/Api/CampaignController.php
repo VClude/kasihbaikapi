@@ -11,6 +11,7 @@ use App\Models\CampaignImage;
 use App\Http\Requests\CampaignImageRequest;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Auth;
 use Config;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Resources\Json\ResourceCollection;
@@ -40,19 +41,20 @@ class CampaignController extends Controller
     {
         if($request->validated()) {
             $campaign = Campaign::query()->create([
-                'user_id' => 1,
-                'name' => $request -> judul,
-                'slug' => $request -> judul,
-                'excerpt' => $request -> shortdesc,
-                'description' => $request -> longdesc,
-                'perks' => $request -> tanggungan,
-                'backer_count' => $request -> targetvolunteer,
-                'goal_amount' => $request -> targetvolunteer,
-                'current_amount' => 0
+                'user_id' => Auth::user()->id,
+                'name' => $request -> name,
+                'slug' => $request -> name,
+                'excerpt' => $request -> excerpt,
+                'description' => $request -> description,
+                'perks' => $request -> perks,
+                'backer_count' => $request -> goal_amount,
+                'goal_amount' => $request -> goal_amount,
+                'current_amount' => 0,
+                'status' => 0,
             ]);
             return new CampaignResource($campaign);
         }
-        return new CampaignResource(null);
+        return new CampaignResource($campaign);
     }
 
     /**

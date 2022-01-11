@@ -11,6 +11,7 @@
                 <div class="w-3/4 mr-6">
                     <h3 class="text-2xl text-white mb-4">Create New Projects</h3>
                 </div>
+
             </div>
             <div class="block mb-2">
                 <div class="w-full lg:max-w-full lg:flex mb-4">
@@ -22,7 +23,7 @@
                                         Campaign Name
                                     </label>
                                     <input
-                                        v-model="form.judul"
+                                        v-model="form.name"
                                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                         type="text"
                                         placeholder="Contoh: Mechanical Keyboard"
@@ -33,7 +34,7 @@
                                         Target Sukarelawan
                                     </label>
                                     <input
-                                        v-model="form.targetvolunteer"
+                                        v-model="form.goal_amount"
                                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                         type="number"
                                         placeholder="Contoh: 200000"
@@ -44,7 +45,7 @@
                                         Deskripsi Singkat
                                     </label>
                                     <input
-                                        v-model="form.shortdesc"
+                                        v-model="form.excerpt"
                                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                         type="text"
                                         placeholder="Deskripsi singkat mengenai projectmu"
@@ -55,7 +56,7 @@
                                         Tanggungan untuk Sukarelawan
                                     </label>
                                     <input
-                                        v-model="form.tanggungan"
+                                        v-model="form.perks"
                                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                         type="text"
                                         placeholder="Contoh: Ayam, Nasi Goreng, Piring"
@@ -66,7 +67,7 @@
                                         Deskripsi Panjang
                                     </label>
                                     <textarea
-                                        v-model="form.longdesc"
+                                        v-model="form.description"
                                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                         type="text"
                                         placeholder="Isi deskripsi panjang untuk projectmu"
@@ -99,11 +100,11 @@ export default {
     name: "CreateCampaign",
         setup() {
         let form = reactive({
-            'judul': '',
-            'targetvolunteer': '',
-            'shortdesc': '',
-            'tanggungan': '',
-            'longdesc': '',
+            'name': '',
+            'goal_amount': '',
+            'excerpt': '',
+            'perks': '',
+            'description': '',
         })
 
         const { errors, storePedulikasih } = useCampaign()

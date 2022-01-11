@@ -19648,11 +19648,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   name: "CreateCampaign",
   setup: function setup() {
     var form = (0,vue__WEBPACK_IMPORTED_MODULE_3__.reactive)({
-      'judul': '',
-      'targetvolunteer': '',
-      'shortdesc': '',
-      'tanggungan': '',
-      'longdesc': ''
+      'name': '',
+      'goal_amount': '',
+      'excerpt': '',
+      'perks': '',
+      'description': ''
     });
 
     var _useCampaign = (0,_composables_campaign__WEBPACK_IMPORTED_MODULE_4__["default"])(),
@@ -20552,50 +20552,50 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Navbar), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
-      return $setup.form.judul = $event;
+      return $setup.form.name = $event;
     }),
     "class": "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
     type: "text",
     placeholder: "Contoh: Mechanical Keyboard"
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.judul]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
-      return $setup.form.targetvolunteer = $event;
+      return $setup.form.goal_amount = $event;
     }),
     "class": "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
     type: "number",
     placeholder: "Contoh: 200000"
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.targetvolunteer]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.goal_amount]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
-      return $setup.form.shortdesc = $event;
+      return $setup.form.excerpt = $event;
     }),
     "class": "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
     type: "text",
     placeholder: "Deskripsi singkat mengenai projectmu"
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.shortdesc]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.excerpt]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
-      return $setup.form.tanggungan = $event;
+      return $setup.form.perks = $event;
     }),
     "class": "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
     type: "text",
     placeholder: "Contoh: Ayam, Nasi Goreng, Piring"
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.tanggungan]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.perks]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
     "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
-      return $setup.form.longdesc = $event;
+      return $setup.form.description = $event;
     }),
     "class": "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
     type: "text",
     placeholder: "Isi deskripsi panjang untuk projectmu"
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.longdesc]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[5] || (_cache[5] = function () {
       return $setup.savePedulikasih && $setup.savePedulikasih.apply($setup, arguments);
     }),
@@ -21691,6 +21691,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm-bundler.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -21703,6 +21704,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 function useCampaign() {
   var campaign = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)([]);
   var errors = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)([]);
+  var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.useRouter)();
+  var token = localStorage.access_token;
 
   var getCampaign = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
@@ -21760,38 +21763,41 @@ function useCampaign() {
 
   var storePedulikasih = /*#__PURE__*/function () {
     var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(data) {
-      var key;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
         while (1) {
           switch (_context3.prev = _context3.next) {
             case 0:
               _context3.prev = 0;
               console.log(data);
-              _context3.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/pedulikasih/store', data);
+              console.log(token);
+              _context3.next = 5;
+              return axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/pedulikasih/store', data, {
+                headers: {
+                  'Authorization': "Bearer ".concat(token)
+                }
+              });
 
-            case 4:
-              _context3.next = 9;
+            case 5:
+              _context3.next = 7;
+              return router.push({
+                name: 'Dashboard'
+              });
+
+            case 7:
+              _context3.next = 12;
               break;
 
-            case 6:
-              _context3.prev = 6;
-              _context3.t0 = _context3["catch"](0);
-
-              if (_context3.t0.response.status === 422) {
-                for (key in _context3.t0.response.data.errors) {
-                  errors.value[key] = _context3.t0.response.data.errors[key][0];
-                }
-              } else if (_context3.t0.response.status === 401) {
-                errors.value['general'] = _context3.t0.response.data.error;
-              }
-
             case 9:
+              _context3.prev = 9;
+              _context3.t0 = _context3["catch"](0);
+              console.log(_context3.t0);
+
+            case 12:
             case "end":
               return _context3.stop();
           }
         }
-      }, _callee3, null, [[0, 6]]);
+      }, _callee3, null, [[0, 9]]);
     }));
 
     return function storePedulikasih(_x2) {
@@ -21968,7 +21974,7 @@ function useUser() {
 
   var getCampaigns = /*#__PURE__*/function () {
     var _ref4 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4() {
-      var token, res, key;
+      var token, res;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
         while (1) {
           switch (_context4.prev = _context4.next) {
@@ -21991,14 +21997,7 @@ function useUser() {
             case 8:
               _context4.prev = 8;
               _context4.t0 = _context4["catch"](1);
-
-              if (_context4.t0.response.status === 422) {
-                for (key in _context4.t0.response.data.errors) {
-                  errors.value[key] = _context4.t0.response.data.errors[key][0];
-                }
-              } else if (_context4.t0.response.status === 401) {
-                errors.value['general'] = _context4.t0.response.data.error;
-              }
+              console.log(_context4.t0);
 
             case 11:
             case "end":

@@ -55,13 +55,7 @@ export default function useUser() {
             })
             campaigns.value = res.data.user.campaigns
         } catch (e) {
-            if(e.response.status === 422) {
-                for(const key in e.response.data.errors) {
-                    errors.value[key] = e.response.data.errors[key][0]
-                }
-            } else if(e.response.status === 401) {
-                errors.value['general'] = e.response.data.error
-            }
+            console.log(e)
         }
     }
 
