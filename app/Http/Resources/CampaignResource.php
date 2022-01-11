@@ -17,10 +17,11 @@ class CampaignResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'initiator' => $this->user->name,
             'slug' => $this->slug,
             'excerpt' => $this->excerpt,
             'description' => $this->description,
-            'perks' => $this->perks,
+            'perks' => explode(",",$this->perks),
             'backer_count' => $this->backer_count,
             'goal_amount' => $this->goal_amount,
             'current_amount' => $this->current_amount,

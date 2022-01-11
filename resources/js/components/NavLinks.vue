@@ -19,11 +19,6 @@
                              to="/features"
                 >Kasih Barang</router-link>
             </li>
-            <li>
-                <router-link class="text-white hover:text-green-500 text-lg px-4 py-3"
-                             to="/story"
-                >Success Stories</router-link>
-            </li>
         </ul>
         <ul class="flex ml-auto items-center mt-2">
             <li v-if="!access_token">

@@ -7,13 +7,13 @@
                     <h2 class="text-4xl text-white mb-2 font-medium">Dashboard</h2>
                     <ul class="flex mt-2">
                         <li class="mr-6">
-                            <router-link class="text-white font-bold" to="/dashboard"> Your Projects </router-link>
+                            <router-link class="text-white font-bold" to="/dashboard"> Peduli Kasih </router-link>
                         </li>
                         <li class="mr-6">
                             <router-link
                                 class="text-gray-300 hover:text-gray-100"
                                 to="/dashboard/transactions">
-                                Your Transactions
+                                Kasih Barang
                             </router-link>
                         </li>
                     </ul>
@@ -22,7 +22,7 @@
                     <router-link
                         to="/dashboard/pedulikasih/create"
                         class="bg-orange-button hover:bg-green-button text-white font-bold py-4 px-4 rounded inline-flex items-center">
-                        + Create Campaign
+                        + Peduli Kasih
                     </router-link>
                 </div>
             </div>
@@ -49,14 +49,17 @@
                             <p class="text-gray-700 text-base overflow-ellipsis overflow-hidden">
                                 {{ item.description }}
                             </p>
+                            <p v-if="item.status == 0" class="text-red-700 text-base overflow-ellipsis overflow-hidden">
+                                Belum Disetujui
+                            </p>
+                            <p v-else class="text-green-700 text-base overflow-ellipsis overflow-hidden">
+                                Disetujui
+                            </p>
                         </div>
                         <div class="flex items-center">
-                            <a
-                                href="/dashboard/detail.html"
-                                class="bg-green-button text-white py-2 px-4 rounded"
-                            >
-                                Detail
-                            </a>
+                            <router-link class="bg-green-button text-white py-2 px-4 rounded"
+                                     :to="{ name: 'SingleCampaign', params: { slug: item.slug } }"
+                        >Detail</router-link>
                         </div>
                     </div>
                 </div>
@@ -84,6 +87,7 @@ import Footer from "../../components/Footer";
 export default {
     name: "Index",
     components: { Navbar, Footer },
+    
     setup() {
         const { campaigns, getCampaigns } = useUser()
 

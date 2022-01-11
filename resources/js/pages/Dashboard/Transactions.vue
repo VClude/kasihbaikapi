@@ -20,14 +20,15 @@
                                 Kasih Barang
                             </router-link>
                         </li>
-                        <li class="mr-6">
-                            <router-link
-                                class="text-gray-100 font-bold"
-                                to="/dashboard/transactions">
-                                Your Transactions
-                            </router-link>
-                        </li>
+
                     </ul>
+                </div>
+                <div class="w-1/4 text-right">
+                    <router-link
+                        to="/dashboard/pedulikasih/create"
+                        class="bg-orange-button hover:bg-green-button text-white font-bold py-4 px-4 rounded inline-flex items-center">
+                        + Kasih Barang
+                    </router-link>
                 </div>
             </div>
             <hr />

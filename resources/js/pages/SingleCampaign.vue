@@ -68,7 +68,7 @@
                         </div>
                         <div class="w-3/4 ml-5 mt-1">
                             <div class="font-semibold text-xl text-gray-800">
-                                Julia Keeva
+                                {{ campaign.initiator }}
                             </div>
                             <div class="font-light text-md text-gray-400">
                                 
@@ -76,13 +76,11 @@
                         </div>
                     </div>
 
-                    <h4 class="mt-5 font-semibold">What will you get:</h4>
-                    <ul class="list-check mt-3">
-                        <li>Equity of the startup directly from the founder</li>
-                        <li>Special service or product that startup has</li>
-                        <li>
-                            You can also sell your equity once the startup going IPO
-                        </li>
+                    <h4 class="mt-5 font-semibold">Pengelola memberikan Tanggungan :</h4>
+                    <ul v-for="item in campaign.perks" class="list-check mt-3">
+
+                        <li>{{item}}</li>
+
                     </ul>
                     <a
                         href="/fund-success.html"
@@ -160,8 +158,6 @@ export default {
         const { campaign, getCampaignBySlug } = useCampaign()
 
         onMounted(getCampaignBySlug(props.slug))
-        console.log(campaign)
-        console.log(getCampaignBySlug)
         return {
             campaign,
             getCampaignBySlug
